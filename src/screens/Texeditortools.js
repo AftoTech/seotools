@@ -12,6 +12,9 @@ const TextEditorTools =() =>{
             </li>
              <li>
             <Link to="/Md5Generator">Md5Generator</Link>
+            </li>
+             <li>
+            <Link to="/ImageToText">ImageToText</Link>
           </li>
         </ul>
       </nav>

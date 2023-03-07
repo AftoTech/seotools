@@ -6,6 +6,7 @@ import HomePage from './screens/homepage';
 import TextEditorTools from './screens/Texeditortools';
 import WordsCounter from './screens/wordcounter/wordscouter';
 import Md5Generator from './screens/md5Generator/md5Generator';
+import ImageToText from './screens/ImageToText/imagetoText';
 function App() {
   return (
     <BrowserRouter>
@@ -13,7 +14,8 @@ function App() {
         <Route path="/" element={<HomePage />}/>
         <Route path="/TextEditorTools" element={<TextEditorTools />} />
         <Route path="/WordsCounter" element={<WordsCounter />} />
-        <Route path="/Md5Generator" element={<Md5Generator />}/>
+        <Route path="/Md5Generator" element={<Md5Generator />} />
+       <Route path="/ImageToText" element={<ImageToText />} />
       </Routes>
     </BrowserRouter>
   );
