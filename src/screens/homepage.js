@@ -9,6 +9,9 @@ const HomePage =() =>{
         <ul>
           <li>
             <Link to="/TextEditorTools">TextEditorTools</Link>
+            </li>
+             <li>
+            <Link to="/MetaTagTools">MetaTagTools</Link>
           </li>
         </ul>
       </nav>

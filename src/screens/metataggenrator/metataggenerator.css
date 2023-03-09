@@ -1,0 +1,7 @@
+.calculatebutton{
+  display: flex;
+  padding-top: 10px;
+  margin-left: 40%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
