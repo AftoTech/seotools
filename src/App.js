@@ -10,6 +10,8 @@ import ImageToText from './screens/ImageToText/imagetoText';
 import MetaTagTools from './screens/metaTagtools';
 import MetaTagExtractor from './screens/metatagextractor/metatagextractor';
 import MetaTagGenerator from './screens/metataggenrator/metatagegenerator';
+import KeyWordTools from './screens/keywordtools';
+import KeywordExtractor from './screens/keywordExtractor/keywordExtractor';
 function App() {
   return (
     <BrowserRouter>
@@ -21,7 +23,9 @@ function App() {
         <Route path="/ImageToText" element={<ImageToText />} />
         <Route path='/MetaTagTools' element={<MetaTagTools />} />
         <Route path='/MetaTagExtractor' element={<MetaTagExtractor />} />
-        <Route path='/MetaTagGenerator' element={<MetaTagGenerator/>}/>
+        <Route path='/MetaTagGenerator' element={<MetaTagGenerator />} />
+        <Route path='/KeyWordTools' element={<KeyWordTools />} />
+        <Route path='/KeywordExtractor' element={<KeywordExtractor/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -12,6 +12,9 @@ const HomePage =() =>{
             </li>
              <li>
             <Link to="/MetaTagTools">MetaTagTools</Link>
+            </li>
+             <li>
+            <Link to="/KeywordTools">KeywordTools</Link>
           </li>
         </ul>
       </nav>
