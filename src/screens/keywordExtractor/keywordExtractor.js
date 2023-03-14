@@ -1,4 +1,5 @@
 import React, { useState } from "react";    
+import { BASE_URL } from "../../constant";
 import "./keywordExtractor.css";
 
 
@@ -6,7 +7,19 @@ import "./keywordExtractor.css";
 const KeywordExtractor = () => {
   const [KeywordExtractor, setKeywordExtractor] = useState()
   const Calculate = () => {
-      
+     var text = document.getElementById("inputField").value;
+      const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text: text.trim() }),
+    };
+    fetch(BASE_URL + '/keywordExtractor', requestOptions)
+      .then((response) => response.json())
+      .then((data) => {
+        setKeywordExtractor(data) 
+      }).catch((err) => {
+        console.log(err)
+      });
   }
   return (
     <div className="container">
