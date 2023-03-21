@@ -12,6 +12,7 @@ import MetaTagExtractor from './screens/metatagextractor/metatagextractor';
 import MetaTagGenerator from './screens/metataggenrator/metatagegenerator';
 import KeyWordTools from './screens/keywordtools';
 import KeywordExtractor from './screens/keywordExtractor/keywordExtractor';
+import KeywordDensityChecker from './screens/keyWorddensity/keyworddensitychecker';
 function App() {
   return (
     <BrowserRouter>
@@ -25,7 +26,8 @@ function App() {
         <Route path='/MetaTagExtractor' element={<MetaTagExtractor />} />
         <Route path='/MetaTagGenerator' element={<MetaTagGenerator />} />
         <Route path='/KeyWordTools' element={<KeyWordTools />} />
-        <Route path='/KeywordExtractor' element={<KeywordExtractor/>}/>
+        <Route path='/KeywordExtractor' element={<KeywordExtractor />} />
+         <Route path='/KeywordDensity' element={<KeywordDensityChecker/>}/>
       </Routes>
     </BrowserRouter>
   );

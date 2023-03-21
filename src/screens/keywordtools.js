@@ -10,6 +10,9 @@ const KeyWordTools =() =>{
           <li>
             <Link to="/KeywordExtractor">KeywordExtractor</Link>
             </li>
+            <li>
+            <Link to="/KeywordDensity">KeywordDensity</Link>
+            </li>
         </ul>
       </nav>
       </div>
