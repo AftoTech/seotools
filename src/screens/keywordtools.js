@@ -13,6 +13,9 @@ const KeyWordTools =() =>{
             <li>
             <Link to="/KeywordDensity">KeywordDensity</Link>
             </li>
+             <li>
+            <Link to="/KeywordCompetitorAnalsyis">KeywordCompetitorAnalsyis</Link>
+            </li>
         </ul>
       </nav>
       </div>
