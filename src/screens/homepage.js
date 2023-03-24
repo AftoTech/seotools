@@ -15,7 +15,11 @@ const HomePage =() =>{
             </li>
              <li>
             <Link to="/KeywordTools">KeywordTools</Link>
-          </li>
+            </li>
+              <li>
+            <Link to="/BacklinkTools">BacklinkTools</Link>
+            </li>
+            
         </ul>
       </nav>
          </div>

@@ -14,6 +14,9 @@ import KeyWordTools from './screens/keywordtools';
 import KeywordExtractor from './screens/keywordExtractor/keywordExtractor';
 import KeywordDensityChecker from './screens/keyWorddensity/keyworddensitychecker';
 import KeywordCompetitor from './screens/KeyWordComptetior/keyWordcompetitor';
+import BackLinkChecker from './screens/backlinkChecker/backlinkChecker';
+import BackLinkTools from './screens/backlinktools';
+import BrokenLinkChecker from './screens/brokenLinkChecker/brokenLinkChecker';
 function App() {
   return (
     <BrowserRouter>
@@ -24,12 +27,16 @@ function App() {
         <Route path="/Md5Generator" element={<Md5Generator />} />
         <Route path="/ImageToText" element={<ImageToText />} />
         <Route path='/MetaTagTools' element={<MetaTagTools />} />
+          <Route path='/BackLinkTools' element={<BackLinkTools />} />
         <Route path='/MetaTagExtractor' element={<MetaTagExtractor />} />
         <Route path='/MetaTagGenerator' element={<MetaTagGenerator />} />
         <Route path='/KeyWordTools' element={<KeyWordTools />} />
         <Route path='/KeywordExtractor' element={<KeywordExtractor />} />
         <Route path='/KeywordDensity' element={<KeywordDensityChecker />} />
-        <Route path='/KeywordCompetitorAnalsyis' element={<KeywordCompetitor/>}/>
+        <Route path='/KeywordCompetitorAnalsyis' element={<KeywordCompetitor />} />
+        <Route path='/KeywordCompetitorAnalsyis' element={<KeywordCompetitor />} />
+        <Route path='/BackLinkChecker' element={<BackLinkChecker />} />
+            <Route path='/BrokenLinkChecker' element={<BrokenLinkChecker/>}/>
       </Routes>
     </BrowserRouter>
   );
