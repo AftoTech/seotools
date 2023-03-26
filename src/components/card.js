@@ -1,15 +1,30 @@
 import React from "react";
-import '../App.css'
+import { useNavigate } from "react-router-dom";
+import "../App.css";
 
-
-const Card = () => {
-    return (
-        <div className="cardContainer">
-            <div className="styleCard">
-                <p>content</p>
-           </div>
-       </div>
-    )
-}
+const Card = (props) => {
+  const { title, Icon , navigateTo} = props;
+  const navigate = useNavigate();
+  const onPress = () => {
+    // /TextEditorTools
+    // /MetaTagTools
+    // /KeywordTools
+    // /BacklinkTools
+       navigate(navigateTo);
+  }
+  return (
+    <div class="card">
+      <div onClick={onPress} class="Cardcontainer">
+        <div class="iconcontainer">
+          <div className="Iconstyle">{Icon}</div>
+        </div>
+        <div>
+          <h4>{title}</h4>
+          <p>this is wheer discription lies on the TextEditor</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Card;

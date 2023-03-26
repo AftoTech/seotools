@@ -1,29 +1,28 @@
+import React from "react";
+import { Outlet, Link } from "react-router-dom";
+import Card from "../components/card";
+import "./homepage.css";
+import { TbTextSize } from 'react-icons/tb';
+import { AiTwotoneTags } from "react-icons/ai";
+import { FaKey, FaExternalLinkSquareAlt } from "react-icons/fa";
+const HomePage = () => {
 
-import React from 'react';
- import { Outlet, Link } from "react-router-dom";
-const HomePage =() =>{
-    return (
-        <div>
-            <p>To refereence</p>
-               <nav>
-        <ul>
-          <li>
-            <Link to="/TextEditorTools">TextEditorTools</Link>
-            </li>
-             <li>
-            <Link to="/MetaTagTools">MetaTagTools</Link>
-            </li>
-             <li>
-            <Link to="/KeywordTools">KeywordTools</Link>
-            </li>
-              <li>
-            <Link to="/BacklinkTools">BacklinkTools</Link>
-            </li>
-            
-        </ul>
-      </nav>
-         </div>
-  )
-}
- 
+  
+  return (
+    <div>
+      <div class="header">
+        <p>SEO Tools</p>
+      </div>
+      <div class="container1">
+        <section class="box2">
+          <Card title="TextEditor" navigateTo="/TextEditorTools" Icon={<TbTextSize className="Icons" />} />
+          <Card title="MetaTagTools" navigateTo="/MetaTagTools" Icon={<AiTwotoneTags className="Icons" />}  />
+          <Card title="KeywordTools"  navigateTo="/KeywordTools" Icon={<FaKey className="Icons" />} />
+           <Card title="BacklinkTools" navigateTo="/BacklinkTools"  Icon={<FaExternalLinkSquareAlt className="Icons" />}/>
+        </section>
+      </div>
+    </div>
+  );
+};
+
 export default HomePage;
