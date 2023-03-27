@@ -11,11 +11,22 @@ const HomePage = () => {
   return (
     <div>
       <div class="header">
-        <p>SEO Tools</p>
+        <div class="headerlogo">
+          <p class="HeaderTitle">SearchAce</p>
+        </div>
+        <div class="headerLinkStyle">
+          <div class="Linkbutton">
+             <p>About Us</p>
+          </div>
+          <div class="Linkbutton">
+             <p>Help</p>
+          </div>
+          
+        </div>
       </div>
       <div class="container1">
         <section class="box2">
-          <Card title="TextEditor" navigateTo="/TextEditorTools" Icon={<TbTextSize className="Icons" />} />
+          <Card title="TextEditor" navigateTo="/TextEditorTools"  Icon={<TbTextSize className="Icons" />} />
           <Card title="MetaTagTools" navigateTo="/MetaTagTools" Icon={<AiTwotoneTags className="Icons" />}  />
           <Card title="KeywordTools"  navigateTo="/KeywordTools" Icon={<FaKey className="Icons" />} />
            <Card title="BacklinkTools" navigateTo="/BacklinkTools"  Icon={<FaExternalLinkSquareAlt className="Icons" />}/>

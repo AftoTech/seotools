@@ -15,8 +15,8 @@ const Card2 = (props) => {
           <div className="Iconstyle">{Icon}</div>
         </div>
         <div>
-          <h4>{title}</h4>
-          <p>this is wheer discription lies</p>
+          <h4 class="cardText">{title}</h4>
+          <p class="cardText">this is wheer discription lies</p>
         </div>
       </div>
     </div>

@@ -8,7 +8,9 @@ const MetaTagTools =() =>{
     return (
           <div>
         <div class="header">
-        <p>MetaTagTools</p>
+       <div class="headerlogo">
+          <p class="HeaderTitle">MetaTag Tools</p>
+        </div>
       </div>
       <div class="container1">
         <section class="box2">

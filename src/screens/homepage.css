@@ -24,6 +24,8 @@
   align-self: center;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  
 }
 .Icons{
   width: 40px;
@@ -31,10 +33,36 @@
   margin-top: 30%;
 }
 .header{
-  background-color: red;
-  margin: 10px;
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0px 0px 1px 0px;
+  /* margin: 10px; */
+  background-color: #67B231;
+  padding-left: 10px;
   font-size: 10px;
+}
+.headerLinkStyle{
+  display: flex;
+  flex: 0.3;
+  justify-content: space-around;
+  align-self: center;
+  flex-direction: row;
+}
+.Linkbutton{
+   color: #fff;
+  font-size:medium
+}
+.headerlogo{
+  align-self: center;
+  justify-content: center;
+  margin-left: 5%;
+  color: #fff;
+}
+.HeaderTitle{
+  font-size: large;
 }
 .box2{
   display: flex;
@@ -52,4 +80,8 @@
   border: 4px ;
   border-radius: 10px;
   box-sizing: border-box;
+  background-color: #67B231;
+}
+.cardText{
+  color: #fff;
 }

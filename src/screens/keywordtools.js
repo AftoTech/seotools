@@ -8,7 +8,9 @@ const KeyWordTools =() =>{
     return (
     <div>
         <div class="header">
-        <p>KeyWord Tools</p>
+          <div class="headerlogo">
+          <p class="HeaderTitle">KeyWord Tools</p>
+        </div>
       </div>
       <div class="container1">
         <section class="box2">

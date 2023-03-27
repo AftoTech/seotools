@@ -8,7 +8,9 @@ const TextEditorTools =() =>{
     return (
         <div>
         <div class="header">
-        <p>TextEditorTools</p>
+        <div class="headerlogo">
+          <p class="HeaderTitle">TextEditor Tools</p>
+        </div>
       </div>
       <div class="container1">
         <section class="box2">

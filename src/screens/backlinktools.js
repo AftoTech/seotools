@@ -8,7 +8,9 @@ const BackLinkTools =() =>{
     return (
         <div>
         <div class="header">
-        <p>BackLink Tools</p>
+       <div class="headerlogo">
+          <p class="HeaderTitle">BackLink Tools</p>
+        </div>
       </div>
       <div class="container1">
         <section class="box2">
