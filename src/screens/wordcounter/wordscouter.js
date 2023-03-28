@@ -35,18 +35,33 @@ const WordsCounter = () => {
     readingTime(text);
   };
   return (
-    <div className="container">
-      <div>
-        <p>WordsCounter :</p>
+    <div>
+      {/* Header */}
+      <div class="header">
+        <div class="headerlogo">
+          <p class="HeaderTitle">Words Counter</p>
+        </div>
+      </div>
+      {/* InputSection */}
+     
+      <div className="inputSectionContainer">
+        <div className="inputtitlecontainer">
+          <p>Input :</p>
+         </div>
         <textarea
+          className="teatAreastyle"
           id="inputField"
           placeholder="Enter your text here..."
         ></textarea>
-      </div>
-      <div className="calculatebutton">
-        <button onClick={Calculate}>Calculate</button>
-      </div>
+        
+    </div>
       <div>
+        {/* butto section */}
+      <div className="calculatebutton" >
+        <button className="buttonstyle"  onClick={Calculate}>Calculate</button>
+        </div>
+        <div className="ResultSection">
+ {/* Result Section */}
         <p>Result :</p>
         <div>
           <div>
@@ -64,6 +79,8 @@ const WordsCounter = () => {
             ReadTime: <span id="characterCount">{estimatedReaTime}</span>
           </div>
         </div>
+        </div>
+       
       </div>
     </div>
   );
