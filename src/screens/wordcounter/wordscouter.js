@@ -16,7 +16,7 @@ const WordsCounter = () => {
       let value = Math.ceil(textLength / wordsPerMinute);
       result = `~${value} min read`;
     }
-    setestimatedReadtime(result)
+    setestimatedReadtime(result);
   }
 
   const Calculate = () => {
@@ -43,44 +43,62 @@ const WordsCounter = () => {
         </div>
       </div>
       {/* InputSection */}
-     
+
       <div className="inputSectionContainer">
         <div className="inputtitlecontainer">
           <p>Input :</p>
-         </div>
+        </div>
         <textarea
           className="teatAreastyle"
           id="inputField"
           placeholder="Enter your text here..."
         ></textarea>
-        
-    </div>
+      </div>
       <div>
         {/* butto section */}
-      <div className="calculatebutton" >
-        <button className="buttonstyle"  onClick={Calculate}>Calculate</button>
+        <div className="calculatebutton">
+          <button className="buttonstyle" onClick={Calculate}>
+            Calculate
+          </button>
         </div>
         <div className="ResultSection">
- {/* Result Section */}
-        <p>Result :</p>
-        <div>
+          {/* Result Section */}
+          <p>Result :</p>
           <div>
-            Characters With Space:{" "}
-            <span id="characterCount">{CharacterCountWithSpace}</span>
-          </div>
-          <div>
-            Characters Without Space:{" "}
-            <span id="characterCount">{CharacterCountWithoutSpace}</span>
-          </div>
-          <div>
-            Words: <span id="wordCount">{WordCount}</span>
-          </div>
-          <div>
-            ReadTime: <span id="characterCount">{estimatedReaTime}</span>
+            <table className="tabelcontainer">
+              <thead>
+                <tr>
+                  <th>S.no</th>
+                  <th>Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Characters With Space</td>
+                    <td>{CharacterCountWithSpace}</td>
+                </tr>
+              </tbody>
+               <tbody>
+                <tr>
+                  <td>Characters Without Space</td>
+                    <td>{CharacterCountWithoutSpace}</td>
+                </tr>
+              </tbody>
+               <tbody>
+                <tr>
+                  <td>Words</td>
+                    <td>{WordCount}</td>
+                </tr>
+              </tbody>
+               <tbody>
+                <tr>
+                  <td>EstimatedReadTime</td>
+                    <td>{estimatedReaTime}</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        </div>
-       
       </div>
     </div>
   );
