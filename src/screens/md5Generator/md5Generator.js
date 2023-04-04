@@ -3,31 +3,59 @@ import { Outlet, Link } from "react-router-dom";
 import "./md5.css";
 var CryptoJS = require("crypto-js");
 const Md5Generator = () => {
-  const [Md5code, setMd5code] = useState()
+  const [Md5code, setMd5code] = useState();
   const Calculate = () => {
-         var text = document.getElementById("inputField").value;
-    var hash = CryptoJS.MD5(text).toString()
-    console.log("data----->", hash)
-    setMd5code(hash)
-  }
+    var text = document.getElementById("inputField").value;
+    var hash = CryptoJS.MD5(text).toString();
+    console.log("data----->", hash);
+    setMd5code(hash);
+  };
   return (
-    <div className="container">
+    <div>
       <div>
-        <p>Md5Generator :</p>
-              <textarea
-                  className="Md5area"
+        {/* Header */}
+        <div class="header">
+          <div class="headerlogo">
+            <p class="HeaderTitle">Md5 Generator</p>
+          </div>
+        </div>
+      </div>
+      <div className="inputSectionContainer">
+        <div className="inputtitlecontainer">
+          <p>Input :</p>
+        </div>
+        <textarea
+          className="teatAreastyle"
           id="inputField"
-          placeholder="Enter your Password here..."
+          placeholder="Enter your text here..."
         ></textarea>
       </div>
+      {/* butto section */}
       <div className="calculatebutton">
-        <button onClick={Calculate}>Generate</button>
+        <button className="buttonstyle" onClick={Calculate}>
+          Calculate
+        </button>
       </div>
-     <div>
-        <p>Result :</p>
-        <p>{Md5code}</p>
+      <div className="ResultSection">
+        {/* Result Section */}
+        <div>
+          <p>Result :</p>
+          <table className="tabelcontainer">
+            <thead>
+              <tr>
+                <th>S.no</th>
+                <th>Category</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MD5 Code</td>
+                <td>{Md5code}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    
     </div>
   );
 };

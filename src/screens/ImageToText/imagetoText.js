@@ -19,22 +19,25 @@ const ImageToText = () => {
   }
 
   return (
-    <div class="ui container">
-      <h1 class="ui header">Image to Text</h1>
-      <div class="desc">
-        Extract all the text from a selected image using tesseract OCR engine.
-      </div>
-
-      <div class="ui grid stackable">
+    <div >
+         <div class="header">
+          <div class="headerlogo">
+            <p class="HeaderTitle">Image To Text</p>
+          </div>
+        </div>
+     
+      <div >
         <div class="row">
-          <div class="eight wide column">
-            <div class="ui card">
-              <div class="content">
-                <h2 class="header">Input</h2>
+          <div >
+             <div >
+                <h1>Input</h1>
               </div>
-              <div class="content">
-                <input type="file" onChange={handleChange} />
-                <img src={file} />
+            <div class="ui card">
+              <div >
+                <div>
+                   <input type="file" onChange={handleChange} />
+               </div>
+                <img style={{width:"60%", height:100}} src={file} />
               </div>
             </div>
           </div>

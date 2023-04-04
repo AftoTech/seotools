@@ -24,3 +24,7 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+.tabelcontainer{
+  height: 130px;
+  width: 500px;
+}
