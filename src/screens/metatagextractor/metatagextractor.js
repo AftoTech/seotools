@@ -66,7 +66,7 @@ const MetaTagExtractor = () => {
             </thead>
             <tbody>
               <tr>
-                <td>MD5 Code</td>
+                <td>MetaTag</td>
                 <td>
                   {" "}
                   <p>

@@ -65,21 +65,30 @@ const KeywordDensityChecker = () => {
   
  ]
   return (
-    <div className="container">
-      <div>
-        <p>KeywordDensityChecker :</p>
-        <textarea
-          className="KeywordArea"
-          id="inputField"
-          placeholder="Enter your Text here..."
-        ></textarea>
+    <div >
+      {/* Header */}
+      <div class="header">
+        <div class="headerlogo">
+          <p class="HeaderTitle">Keyword Density Extractor</p>
+        </div>
+      </div>
+      <div className="inputSectionContainer">
+       <div className="inputtitlecontainer">
+            <p>Input :</p>
+          </div>
+          <textarea
+            className="teatAreastyle"
+            id="inputField"
+            placeholder="Enter your text here..."
+          ></textarea>
       </div>
       <div className="calculatebutton">
         <button onClick={Calculate}>Extract</button>
       </div>
-      <div>
+      <div className="ResultSection">
           <p>Result :</p>
-        {
+        <div>
+           {
           KeywordDensityChecker && (
             <>
              <h2>Top Phrases</h2>
@@ -89,15 +98,17 @@ const KeywordDensityChecker = () => {
               <h2>Two Phrases</h2>
               {renderTable(KeywordDensityChecker?.twoPhrases)}
                <h2>Three Phrases</h2>
-      {renderTable(KeywordDensityChecker?.threePhrases)}
+              {renderTable(KeywordDensityChecker?.threePhrases)}
             </>
           )
-        }
-       
-      </div>
-       <div style={{width: 300 ,height: 300, margin: 10}}>
+          }
+           <div style={{width: 300 ,height: 300, margin: 10,alignItems:'center'}}>
         <ReactWordcloud words={words} />
         </div>
+         </div>
+       
+      </div>
+      
     </div>
   );
 };

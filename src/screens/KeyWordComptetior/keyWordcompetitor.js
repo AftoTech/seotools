@@ -16,34 +16,81 @@ const KeywordCompetitor = () => {
     fetch(BASE_URL + '/KeywordCompetitorAnalysis', requestOptions)
       .then((response) => response.json())
       .then((data) => {
-          let value = JSON.parse(data)
+        let value = JSON.parse(data)
+        console.log(value)
          setcomptetiorLinks(value)
       }).catch((err) => {
         console.log(err)
       });
   }
   return (
-    <div className="container">
+    <div >
+      {/* Header */}
+      <div class="header">
+        <div class="headerlogo">
+          <p class="HeaderTitle">Keyword Competitor Analysis</p>
+        </div>
+      </div>
       <div>
-        <p>Keyword Competitor Analysis :</p>
-              <textarea
-                  className="KeyWordInput"
+         <div>
+        {/* InputSection */}
+
+        <div className="inputSectionContainer">
+          <div className="inputtitlecontainer">
+            <p>Input :</p>
+          </div>
+         <textarea
+              className="teatAreastyle"
           id="inputField"
           placeholder="Enter your KeyWord here..."
         ></textarea>
+          </div>
+          
       </div>
+      </div>
+      {/* butto section */}
       <div className="calculatebutton">
-        <button onClick={Calculate}>Generate</button>
+        <button className="buttonstyle" onClick={Calculate}>
+          Extract
+        </button>
       </div>
-     <div>
-              <p>Result :</p>
-              {
+     <div className="ResultSection">
+        <p>Result :</p>
+         <div>
+            {
+              comptetiorLinks?.results?.length > 0 && (
+              <table >
+                <thead>
+                  <tr>
+                    <th>S.no</th>
+                    <th style={{textalign:'center'}}>Word</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                        {
+                            comptetiorLinks?.results?.map((item) => {
+                      return (
+                         <tr>
+                          <td>{comptetiorLinks?.results.indexOf(item) + 1} </td>
+                          <td>{item?.url}</td>
+                         </tr>
+                      )
+                    })
+                      
+                  }
+                </tbody>
+              </table>
+              )
+            }
+          </div>
+              {/* {
                   comptetiorLinks?.results.map(item => {
                       return (
                       <p>{item?.url}</p>
                       )
                   })
-              }
+              } */}
         
       </div>
     

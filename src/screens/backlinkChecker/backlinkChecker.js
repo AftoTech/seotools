@@ -17,25 +17,38 @@ const BackLinkChecker = () => {
       .then((response) => response.json())
         .then((data) => {
           console.log(data)
-        // setKeywordExtractor(data) 
+        setBacklinks(data) 
       }).catch((err) => {
         console.log(err)
       });
   }
   return (
-    <div className="container">
-      <div>
-        <p>BackLinkChecker :</p>
-              <textarea
-                  className="KeywordArea"
-          id="inputField"
-          placeholder="Enter your url here..."
-        ></textarea>
+    <div >
+        {/* Header */}
+      <div class="header">
+        <div class="headerlogo">
+          <p class="HeaderTitle">BackLinkChecker</p>
+        </div>
       </div>
+        {/* InputSection */}
+
+        <div className="inputSectionContainer">
+          <div className="inputtitlecontainer">
+            <p>Input :</p>
+          </div>
+          <textarea
+            className="teatAreastyle"
+            id="inputField"
+            placeholder="Enter your Url here..."
+          ></textarea>
+        </div>
+     {/* butto section */}
       <div className="calculatebutton">
-        <button onClick={Calculate}>Extract</button>
+        <button className="buttonstyle" onClick={Calculate}>
+          Extract
+        </button>
       </div>
-     <div>
+     <div className="ResultSection">
         <p>Result :</p>
         <p>{Backlinks}</p>
       </div>
