@@ -5,6 +5,7 @@ import "./homepage.css";
 import { TbTextSize } from 'react-icons/tb';
 import { AiTwotoneTags } from "react-icons/ai";
 import { FaKey, FaExternalLinkSquareAlt } from "react-icons/fa";
+import { IoMdAnalytics } from "react-icons/io";
 const HomePage = () => {
 
   
@@ -12,14 +13,15 @@ const HomePage = () => {
     <div>
       <div class="header">
         <div class="headerlogo">
-          <p class="HeaderTitle">SearchAce</p>
+          <IoMdAnalytics  className="Icons2" />
+          <p style={{marginLeft:10}} class="HeaderTitle">Genitive</p>
         </div>
         <div class="headerLinkStyle">
-          <div class="Linkbutton">
+          <div  class="Linkbutton">
              <p>About Us</p>
           </div>
           <div class="Linkbutton">
-             <p>Help</p>
+             <p>Contact Us</p>
           </div>
           
         </div>
