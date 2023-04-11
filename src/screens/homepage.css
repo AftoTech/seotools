@@ -56,9 +56,23 @@
   align-self: center;
   flex-direction: row;
 }
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration:none; 
+    cursor:pointer;  
+}
 .Linkbutton{
    color: #fff;
-  font-size:medium
+  font-size:medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 .headerlogo{
   align-self: center;

@@ -17,6 +17,7 @@ import KeywordCompetitor from './screens/KeyWordComptetior/keyWordcompetitor';
 import BackLinkChecker from './screens/backlinkChecker/backlinkChecker';
 import BackLinkTools from './screens/backlinktools';
 import BrokenLinkChecker from './screens/brokenLinkChecker/brokenLinkChecker';
+import AboutUs from './screens/headerPages/aboutUs';
 function App() {
   return (
     <BrowserRouter>
@@ -36,7 +37,8 @@ function App() {
         <Route path='/KeywordCompetitorAnalsyis' element={<KeywordCompetitor />} />
         <Route path='/KeywordCompetitorAnalsyis' element={<KeywordCompetitor />} />
         <Route path='/BackLinkChecker' element={<BackLinkChecker />} />
-            <Route path='/BrokenLinkChecker' element={<BrokenLinkChecker/>}/>
+        <Route path='/BrokenLinkChecker' element={<BrokenLinkChecker />} />
+        <Route path='/AboutUs' element={<AboutUs/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -16,15 +16,19 @@ const HomePage = () => {
           <IoMdAnalytics  className="Icons2" />
           <p style={{marginLeft:10}} class="HeaderTitle">Genitive</p>
         </div>
-        <div class="headerLinkStyle">
+        {/* <div class="headerLinkStyle">
           <div  class="Linkbutton">
-             <p>About Us</p>
+            <a href="/AboutUs">
+              About Us
+            </a>
           </div>
-          <div class="Linkbutton">
-             <p>Contact Us</p>
+          <div  class="Linkbutton">
+            <a href="https://www.w3schools.com">
+              Contact Us
+            </a>
           </div>
           
-        </div>
+        </div> */}
       </div>
       <div class="container1">
         <section class="box2">
