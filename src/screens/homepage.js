@@ -6,6 +6,7 @@ import { TbTextSize } from 'react-icons/tb';
 import { AiTwotoneTags } from "react-icons/ai";
 import { FaKey, FaExternalLinkSquareAlt } from "react-icons/fa";
 import { IoMdAnalytics } from "react-icons/io";
+import { disciption } from "../constant";
 const HomePage = () => {
 
   
@@ -32,10 +33,10 @@ const HomePage = () => {
       </div>
       <div class="container1">
         <section class="box2">
-          <Card title="TextEditor" navigateTo="/TextEditorTools"  Icon={<TbTextSize className="Icons" />} />
-          <Card title="MetaTagTools" navigateTo="/MetaTagTools" Icon={<AiTwotoneTags className="Icons" />}  />
-          <Card title="KeywordTools"  navigateTo="/KeywordTools" Icon={<FaKey className="Icons" />} />
-           <Card title="BacklinkTools" navigateTo="/BacklinkTools"  Icon={<FaExternalLinkSquareAlt className="Icons" />}/>
+          <Card discription={disciption.TextEditor} title="TextEditor" navigateTo="/TextEditorTools"  Icon={<TbTextSize className="Icons" />} />
+          <Card discription={disciption.MetaTagTools}  title="MetaTagTools" navigateTo="/MetaTagTools" Icon={<AiTwotoneTags className="Icons" />}  />
+          <Card discription={disciption.KeyWordTools}  title="KeywordTools"  navigateTo="/KeywordTools" Icon={<FaKey className="Icons" />} />
+           <Card discription={disciption.BacklinkTools}  title="BacklinkTools" navigateTo="/BacklinkTools"  Icon={<FaExternalLinkSquareAlt className="Icons" />}/>
         </section>
       </div>
     </div>

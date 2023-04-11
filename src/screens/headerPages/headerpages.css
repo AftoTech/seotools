@@ -40,19 +40,18 @@
 body {
 	background-color: #fff;
 	color: #000;
-	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
 header {
-	background-color: #67B231;
+	background-color: #fff;
 	padding: 20px;
 	text-align: center;
 }
 
 h1, h2 {
-	color:#67B231;
+	color:#fff;
 	margin: 0;
 }
 
