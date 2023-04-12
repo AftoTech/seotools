@@ -103,7 +103,7 @@ const KeywordDensityChecker = () => {
           )
           }
            <div style={{width: 300 ,height: 300, margin: 10,alignItems:'center'}}>
-        <ReactWordcloud words={words} />
+        {/* <ReactWordcloud words={words} /> */}
         </div>
          </div>
        
