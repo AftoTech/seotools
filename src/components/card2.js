@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 const Card2 = (props) => {
-  const { title, Icon , navigateTo} = props;
+  const { title, Icon , navigateTo , discription} = props;
   const navigate = useNavigate();
   const onPress = () => {
        navigate(navigateTo);
@@ -16,7 +16,7 @@ const Card2 = (props) => {
         </div>
         <div>
           <h4 class="cardText">{title}</h4>
-          <p class="cardText">this is wheer discription lies</p>
+          <p class="cardText">{discription}</p>
         </div>
       </div>
     </div>
