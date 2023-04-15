@@ -5,7 +5,7 @@ import "./backlinkChecker.css";
 
 
 const BackLinkChecker = () => {
-  const [Backlinks, setBacklinks] = useState()
+  const [Backlinks, setBacklinks] = useState([])
   const Calculate = () => {
      var text = document.getElementById("inputField").value;
       const requestOptions = {
@@ -16,8 +16,8 @@ const BackLinkChecker = () => {
     fetch(BASE_URL + '/BacklinkChecker', requestOptions)
       .then((response) => response.json())
         .then((data) => {
-          console.log(data)
-        setBacklinks(data) 
+          console.log(data.data)
+        setBacklinks(data.data) 
       }).catch((err) => {
         console.log(err)
       });
@@ -50,7 +50,14 @@ const BackLinkChecker = () => {
       </div>
      <div className="ResultSection">
         <p>Result :</p>
-        <p>{Backlinks}</p>
+        {
+          Backlinks?.map(item => {
+            return (
+               <p>{item}</p>
+             )
+          })
+        }
+       
       </div>
     
     </div>
