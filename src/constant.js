@@ -1,4 +1,7 @@
-export const BASE_URL = 'http://localhost:8000'
+const localhost = 'http://localhost:8000'
+const deployed = 'https://us-central1-genitive-73c4c.cloudfunctions.net/api'
+
+export const BASE_URL = deployed
 
 export const disciption = {
     TextEditor: 'A text editor is a tool that allows users to create and Edit Text.',
