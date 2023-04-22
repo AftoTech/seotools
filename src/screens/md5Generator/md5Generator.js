@@ -4,10 +4,12 @@ import "./md5.css";
 var CryptoJS = require("crypto-js");
 const Md5Generator = () => {
   const [Md5code, setMd5code] = useState();
+  const [Loading,setLoading] = useState(false)
   const Calculate = () => {
+    setLoading(true)
     var text = document.getElementById("inputField").value;
     var hash = CryptoJS.MD5(text).toString();
-    console.log("data----->", hash);
+    setLoading(false)
     setMd5code(hash);
   };
   return (
@@ -49,8 +51,15 @@ const Md5Generator = () => {
             </thead>
             <tbody>
               <tr>
-                <td>MD5 Code</td>
-                <td>{Md5code}</td>
+                <td >MD5 Code</td>
+                <td style={{ width: 300 }}>
+                  {
+                    Loading ? 
+                      <p>Loading...</p>
+                      :
+                      <p>{Md5code}</p>
+                  }
+                </td>
               </tr>
             </tbody>
           </table>
